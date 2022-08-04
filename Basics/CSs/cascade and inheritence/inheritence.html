@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.a {
+  list-style-type: circle;
+  color: blue;
+}
+.a>li>a{
+    color: darkgoldenrod;
+}
+
+ul.b {
+  list-style-type: square;
+  color: red;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+blockquote{
+    color: pink;
+}
+.fix-this{
+    all:unset;  
+}
+
+#imp>#winning {
+    background-color: red;
+    border: 1px solid black;
+}
+    
+#imp>.better {
+    background-color: gray;
+    border: none !important;
+}
+    
+#imp>p {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}           
+</style>
+</head>
+<body>
+
+<h2>The list-style-type Property</h2>
+
+<p>Example of unordered lists:</p>
+<ul class="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+<!-- to unset the color -->
+<li>The unset color of <a href="">unset</a></li>
+</ul>
+
+<ul class="b">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Example of ordered lists:</p>
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+<blockquote>
+    <p>This blockquote is styled</p>
+</blockquote>
+
+<blockquote class="fix-this">
+    <p>This blockquote is not styled</p>
+</blockquote>
+
+
+<div id="imp">
+<p class="better">This is a paragraph.</p>
+<p class="better" id="winning">One selector to rule them all!</p>
+</div>
+</body>
+</html>
+
+

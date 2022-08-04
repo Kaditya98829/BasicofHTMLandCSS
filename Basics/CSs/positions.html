@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan:wght@300&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,300,1,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        *{
+            cursor: url("cursor\ \(1\).png"),auto;
+        }
+        .first{
+            position: relative;
+            height: 100px;
+            width: 100px;
+            left:100px;
+            /* positioned acc to its original position */
+            background-color: yellow;
+        }
+        .second{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            left: 10px;
+            /* positioned acc to its parent class */
+            background-color: orange;
+        }
+        .third{
+            position: fixed;
+            height: 50px;
+            width: 50px;
+            right: 20px;
+            bottom: 50px;
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: 0 0 5px  rgba(0,0,0,0.6);
+            color: grey;
+            cursor: pointer;
+
+            
+        }
+        .third>span{
+            margin:auto;
+        }
+        .stack{
+            height: auto;
+            width: auto;
+            
+            margin-top: 100vh;
+            display: flex;
+            justify-content: center;  
+            background-color:wheat;
+            
+            
+        }
+        /* justify-contentworks with display flex */
+        .stack-1{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+        .stack-1,.stack-2,.stack-3,.stack-4,.stack-5{
+            text-align: center;
+            border-radius: 50% ;
+        }
+        .stack-1 >p{
+            height:50px;
+            width: 50px;
+            position: relative;
+            top: 20px;
+            color: cyan;
+            font-family: 'Noto Serif Tibetan', serif;
+            font-size: 3vmax;
+            
+        }
+        .stack-2 >p{
+            height:50px;
+            width: 50px;
+            position: relative;
+            top: 20px;
+            color: green;
+            font-size: 3vmax;
+            
+        }
+        .stack-3 >p{
+            height:50px;
+            width: 50px;
+            position: relative;
+            top: 20px;
+            color: yellow;
+            font-size: 3vmax;
+            
+        }
+        .stack-4 >p{
+            height:50px;
+            width: 50px;
+            position: relative;
+            top: 20px;
+            color: blue;
+            font-size: 3vmax;
+        }
+        .stack-5 >p{
+            height:50px;
+            width: 50px;
+            position: relative;
+            top: 20px;
+            color: blue;
+            font-size: 3vmax;
+            
+        }
+        .stack-2{
+            height: 200px;
+            width: 200px;
+            background-color:white;
+            display: flex;
+            justify-content: center;
+            
+
+        }
+        .stack-3{
+            height: 200px;
+            width: 200px;
+            background-color:red;
+            display: flex;
+            justify-content: center;
+        }
+        .stack-4{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+
+        }
+        .stack-5{
+            height: 200px;
+            width: 200px;
+            background-color:yellow;
+            display: flex;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="first"></div>
+
+
+    <div class="second"></div>
+
+    <div class="third"><span class="material-symbols-rounded">
+        navigation
+        </span></div>
+    
+
+      <div class="stack">
+      <div class="stack-1"><p>ཨོཾ་</p></div>
+      <div class="stack-2"><p>མ</p></div>
+      <div class="stack-3"><p>ཎི</p></div>
+      <div class="stack-4"><p>པ <span style="color: red;">དྨེ</span>་</p></div>
+      <div class="stack-5"><p>ཧཱུྃ </p></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* a[href] {
+  background-color: yellow;
+} */
+
+[hh],[h4]{
+ background-color: aqua;
+}
+
+[target=_blank]{
+    background-color: rebeccapurple;
+}
+*{
+  cursor:url(../CSs/Basic/icons8-cursor-64.png),auto;
+}
+
+
+/* id has high precedence value */
+/* <!-- class Selector --> */
+#b{
+  color: blue ;  
+}
+.b{
+  color: magenta;
+}
+/* Psuedo selector */
+
+article p:first-child::first-letter{
+  color: red;
+}
+article p:last-child{
+  color: aqua;
+}
+
+
+.a:link{
+
+  text-decoration:none;
+  font-size: 2vmax;
+}
+.a:visited{
+  color:brown;
+  
+}
+.a:active{
+  color: blue;
+}
+
+.a:hover{
+
+  color:grey;
+}
+
+.first{
+  
+}
+.first1{
+  width:400px;
+  height: 400px;
+  margin: auto;
+  border:10px solid red;
+}
+.first2{
+  width:300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 25px;
+  border:10px solid blue;
+}
+.first3{
+  width:200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 20px;
+  border:10px solid green;
+}
+.first4{
+  width:150px;
+  height: 150px;
+  margin: auto;
+  margin-top: 20px;
+  border:10px solid green;
+}
+.first5{
+  width:100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 20px;
+  border:10px solid green;
+}
+.first6{
+  width:50px;
+  height: 50px;
+  margin: auto;
+  margin-top: 20px;
+  border:10px solid green;
+}
+.first7{
+  width:10px;
+  height: 10px;
+  margin: auto;
+  margin-top: 10px;
+  border:10px solid green;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+
+
+<div class="b" id="b">
+  hello B
+</div>
+
+
+
+
+<!-- attribute selector -->
+<h2>CSS [attribute] Selector</h2>
+<p>The links with a target attribute gets a yellow background:</p>
+<marquee onMouseOver="this.stop()" onMouseOut="this.start() " behavior="scroll" loop="INFINITE" scrollamount="100">
+<a href="https://www.w3schools.com" hh>w3schools.com</a>
+<a href="http://www.disney.com" target="_blank" h2>disney.com</a>
+<a href="http://www.wikipedia.org" target="_top" h4>wikipedia.org</a>
+
+
+
+
+
+
+
+</marquee>
+<!-- Psuedo selector -->
+
+<article>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quae natus, molestias unde quis dolores excepturi harum nobis dolore incidunt pariatur earum sit itaque quas magni eum voluptate velit est?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eum nobis eos dicta tenetur illum soluta eaque corrupti voluptate molestiae iure beatae, quidem exercitationem voluptas maiores perferendis reiciendis facere dolorem?</p>
+</article>
+
+<a href="" class="a">Tis is Over and Visited link</a>
+
+
+<div class="first">
+  <div class="first1">
+    <div class="first2">
+      
+      <div class="first3">
+       <div class="first4">
+        <div class="first5">
+          <div class="first6">
+              <div class="first7">
+
+              </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
