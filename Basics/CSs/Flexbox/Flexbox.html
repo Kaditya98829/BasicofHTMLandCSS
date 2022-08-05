@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            margin-top: 200px;
+          display: flex;
+          justify-content:space-around;
+              }
+        .flexItem-1,.flexItem-2,.flexItem-3,.flexItem-4,.flexItem-5{
+            
+            height: 100px;
+
+            width: 100px;
+            margin: 12px;
+        
+            background-color: red;
+            
+            position: relative;
+            transform: rotate(-45deg);
+            animation-name:dil;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+     .flexItem-1::before{
+  content: "";
+        position: absolute;
+        top: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     } 
+     .flexItem-1::after{
+        content: "";
+        position: fixed;
+        right: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     }
+     .flexItem-2::before{
+  content: "";
+        position: absolute;
+        top: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     } 
+     .flexItem-2::after{
+        content: "";
+        position: fixed;
+        right: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     }
+     .flexItem-3::before{
+  content: "";
+        position: absolute;
+        top: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     } 
+     .flexItem-3::after{
+        content: "";
+        position: fixed;
+        right: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     }
+     .flexItem-4::before{
+  content: "";
+        position: absolute;
+        top: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     } 
+     .flexItem-4::after{
+        content: "";
+        position: fixed;
+        right: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     }
+     .flexItem-5::before{
+  content: "";
+        position: absolute;
+        top: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     } 
+     .flexItem-5::after{
+        content: "";
+        position: fixed;
+        right: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     }
+     @keyframes dil {
+        0%{
+            transform: rotate(-45deg) scale(1.06);
+        }
+     }
+
+     @media screen and (max-width: 600px){
+        .container{
+            margin-top: 200px;
+          display: flex;
+          justify-content:space-around;
+          flex-wrap: wrap;
+              }
+        .flexItem-1,.flexItem-2,.flexItem-3,.flexItem-4,.flexItem-5{
+            
+            height: 100px;
+
+            width: 100px;
+            margin: 50px;
+        
+            background-color: red;
+            
+            position: relative;
+            transform: rotate(-45deg);
+            animation-name:dil;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+     .flexItem-1::before{
+  content: "";
+        position: absolute;
+        top: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     } 
+     .flexItem-1::after{
+        content: "";
+        position: fixed;
+        right: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     }
+     .flexItem-2::before{
+  content: "";
+        position: absolute;
+        top: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     } 
+     .flexItem-2::after{
+        content: "";
+        position: fixed;
+        right: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     }
+     .flexItem-3::before{
+  content: "";
+        position: absolute;
+        top: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     } 
+     .flexItem-3::after{
+        content: "";
+        position: fixed;
+        right: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     }
+     .flexItem-4::before{
+  content: "";
+        position: absolute;
+        top: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     } 
+     .flexItem-4::after{
+        content: "";
+        position: fixed;
+        right: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     }
+     .flexItem-5::before{
+  content: "";
+        position: absolute;
+        top: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     } 
+     .flexItem-5::after{
+        content: "";
+        position: fixed;
+        right: -50%;
+        background: red;
+        width: 100px;
+        height: 100px;
+        border-radius:50px ;
+     }
+
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flexItem-1">1</div>
+        <div class="flexItem-2">2</div>
+        <div class="flexItem-3">3</div>
+        <div class="flexItem-4">4</div>
+        <div class="flexItem-5">5</div>
+    </div>
+</body>
+</html>
